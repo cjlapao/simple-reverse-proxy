@@ -1,0 +1,30 @@
+{
+  "port": "80",
+  "hosts": [
+    {
+      "host": "13.59.203.84",
+      "port": "2202",
+      "tcp": {
+        "target": "10.211.55.135:22"
+      }
+    },
+    {
+      "host": "13.59.203.84",
+      "port": "5589",
+      "tcp": {
+        "target": "10.211.55.135:5589"
+      }
+    },
+    {
+      "host": "localhost",
+      "port": "8081",
+      "routes": [
+        {
+          "path": "/guacamole",
+          "target": "http://localhost",
+          "target_port": "8080"
+        }
+      ]
+    }
+  ]
+}

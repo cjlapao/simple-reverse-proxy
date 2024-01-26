@@ -1,0 +1,11 @@
+version: '3.9'
+name: micro_service
+services:
+  proxy.service:
+    build: .
+    ports:
+      - "80:80"
+      - "3306:3306"
+    extra_hosts:
+      - "parallels.internal:host-gateway"
+      - "db.parallels.internal:host-gateway"

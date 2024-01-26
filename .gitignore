@@ -1,0 +1,6 @@
+**/__debug*
+.DS_Store
+simple-reverse-proxy
+**/*.local*
+.tmp
+.local
